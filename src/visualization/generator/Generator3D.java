@@ -1,8 +1,9 @@
 package visualization.generator;
 
-import visualization.event.*;
-import visualization.result.reducer.*;
-import visualization.result.*;
+import visualization.event.Event;
+import visualization.event.ReducerEvent;
+import visualization.event.Resolution3DEvent;
+import visualization.result.reducer.Reducer3D;
 
 /**
  * Generator3D is an abstract base class for all applications that

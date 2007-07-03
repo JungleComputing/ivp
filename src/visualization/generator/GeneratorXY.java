@@ -1,11 +1,14 @@
 package visualization.generator;
 
-import visualization.event.*;
-import visualization.result.reducer.*;
-import visualization.result.*;
+import java.awt.event.ActionListener;
 
 import javax.swing.Timer;
-import java.awt.event.ActionListener;
+
+import visualization.event.EnableEvent;
+import visualization.event.Event;
+import visualization.event.IntervalEvent;
+import visualization.result.Result;
+import visualization.result.ResultXY;
 
 /**
  * GeneratorXY is an abstract base class for all applications that
@@ -22,8 +25,6 @@ public abstract class GeneratorXY extends Generator {
 	private int[] delay;
 	private boolean[] enable;
 	private Timer[] timer;
-
-	private boolean exited;
 
 	/**
 	 * Sets the number of sources that generate {@link visualization.result.ResultXY}s.

@@ -2,7 +2,6 @@ package visualization.generator;
 
 import visualization.event.*;
 import visualization.result.reducer.*;
-import visualization.result.*;
 
 /**
  * Generator2D is an abstract base class for all applications that
